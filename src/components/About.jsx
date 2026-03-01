@@ -11,7 +11,7 @@ const About = () => {
                 {/* Photo Section */}
                 <div style={{ position: 'relative', width: '100%', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '3rem' }}>
 
-                    {/* Cinematic DevOps Infinity Background */}
+                    {/* Cinematic DevOps Infinity Background - Seamless floating animation */}
                     <img
                         src="/cinematic_devops_bg.png"
                         alt=""
@@ -23,7 +23,8 @@ const About = () => {
                             zIndex: 1,
                             opacity: '0.45',
                             filter: 'blur(1px)',
-                            pointerEvents: 'none'
+                            pointerEvents: 'none',
+                            animation: 'floatLogo 8s ease-in-out infinite'
                         }}
                     />
 
@@ -50,6 +51,13 @@ const About = () => {
                             }}
                         />
                     </div>
+
+                    <style>{`
+                        @keyframes floatLogo {
+                            0%, 100% { transform: translateY(0) rotate(0deg); }
+                            50% { transform: translateY(-20px) rotate(2deg); }
+                        }
+                    `}</style>
                 </div>
 
                 <div>
