@@ -13,14 +13,13 @@ const About = () => {
                     <div className="glow-cyan" style={{
                         width: '100%',
                         aspectRatio: '1/1',
-                        borderRadius: '12px',
                         overflow: 'hidden',
                         border: '2px solid var(--accent-cyan)'
                     }}>
                         <img
-                            src="/karthi_photo.jpg"
+                            src="/image.png"
                             alt="Karthi S"
-                            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                            style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
                         />
                     </div>
                 </div>
