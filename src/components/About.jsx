@@ -9,33 +9,36 @@ const About = () => {
             <div className="about-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(250px, 1fr) 2fr', gap: '4rem', alignItems: 'flex-start' }}>
 
                 {/* Photo Section */}
-                <div style={{ position: 'relative', width: '100%', aspectRatio: '1/1', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <div style={{ position: 'relative', width: '100%', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '2rem' }}>
 
-                    {/* Cinematic DevOps Infinity Background */}
+                    {/* Cinematic DevOps Infinity Background - NOW VISIBLE */}
                     <img
                         src="/cinematic_devops_bg.png"
                         alt=""
                         style={{
                             position: 'absolute',
-                            width: '95%',
-                            height: '95%',
+                            width: '110%',
+                            height: '110%',
                             objectFit: 'contain',
                             zIndex: 1,
-                            opacity: '0.25',
-                            filter: 'blur(3px)',
-                            pointerEvents: 'none'
+                            opacity: '0.5',
+                            filter: 'blur(1px)',
+                            pointerEvents: 'none',
+                            transform: 'scale(1.2)'
                         }}
                     />
 
-                    {/* Clean Portrait - No Frame */}
+                    {/* Clean Portrait - Larger and Impactful */}
                     <div style={{
                         position: 'relative',
-                        width: '75%',
-                        height: '75%',
+                        width: '90%',
+                        height: 'auto',
+                        aspectRatio: '4/5',
                         zIndex: 2,
-                        borderRadius: '16px',
+                        borderRadius: '12px',
                         overflow: 'hidden',
-                        boxShadow: '0 10px 30px rgba(0,0,0,0.5)'
+                        boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.7)',
+                        border: '1px solid rgba(0, 245, 255, 0.2)'
                     }}>
                         <img
                             src="/image.png"
