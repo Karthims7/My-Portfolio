@@ -11,25 +11,26 @@ const About = () => {
                 {/* Photo Section */}
                 <div style={{ position: 'relative', width: '100%', aspectRatio: '1/1' }}>
 
-                    {/* Background Terminal Frame */}
+                    {/* Background DevOps Infinity Frame */}
                     <div style={{
                         position: 'absolute',
                         top: 0, left: 0, right: 0, bottom: 0,
-                        backgroundImage: 'url(/terminal_frame.png)',
+                        backgroundImage: 'url(/devops_portrait_bg.png)',
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                         zIndex: 1,
                         borderRadius: '12px',
-                        boxShadow: '0 0 20px rgba(0, 240, 255, 0.2)'
+                        boxShadow: '0 0 30px rgba(0, 245, 255, 0.2)'
                     }} />
 
                     {/* Foreground Portrait Profile */}
                     <div style={{
                         position: 'absolute',
-                        top: '12%', left: '12%', right: '12%', bottom: '12%',
+                        top: '10%', left: '10%', right: '10%', bottom: '10%',
                         zIndex: 2,
                         overflow: 'hidden',
-                        borderRadius: '4px'
+                        borderRadius: '50%',
+                        border: '2px solid rgba(0, 245, 255, 0.3)'
                     }}>
                         <img
                             src="/image.png"
