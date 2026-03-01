@@ -1,16 +1,76 @@
-# React + Vite
+# Karthi S - Infrastructure Support & Cloud/DevOps Engineer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance personal portfolio website built with a bespoke "DevOps / Control Panel" aesthetic. It emphasizes dark mode typography, pipeline timelines, and containerized layouts to reflect an identity rooted in deep Cloud infrastructure, Linux administration, and SRE best practices.
 
-Currently, two official plugins are available:
+## 🚀 Live Preview
+*(Add your live hosting link here once deployed, e.g., `https://karthims7.github.io/My-Portfolio/`)*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Technology Stack
 
-## React Compiler
+- **Frontend Framework**: [React 18](https://react.dev/) – Component-based UI.
+- **Build Tool**: [Vite](https://vitejs.dev/) – Extremely fast Hot Module Replacement (HMR) and optimized static asset compilation.
+- **Styling**: Vanilla CSS3 (`index.css`) – Utilizing CSS variables for robust Light/Dark theme switching, Flexbox/Grid for responsive layouts, and custom keyframe animations.
+- **Icons**: [Lucide React](https://lucide.dev/) – Clean, lightweight SVG icons carefully colored to match the brand.
+- **Containerization**: [Docker](https://www.docker.com/) – Multi-stage builds utilizing lightweight Alpine Linux distributions (Node for compiling, Nginx for secure serving).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🎨 Theme & Aesthetic
 
-## Expanding the ESLint configuration
+- **Color Palette**: Dark (`#0a0a0a`) background with Neon accents (Cyan `#00f0ff`, Green `#39ff14`, Purple `#b026ff`).
+- **Brand Color**: Saffron/Yellow (`#facc15`), used heavily in Light Mode and for the signature DevOps infinity logo.
+- **Typography**: `Fira Code` / `JetBrains Mono` for all technical elements (Headers, Code blocks) alongside `Inter` for highly legible body text.
+- **Visual Metaphors**: 
+  - The hero section simulates a bash `init_profile.sh` startup sequence.
+  - The Experience section is styled as a connected CI/CD pipeline branch.
+  - The Skills section displays technical competencies mapped as `docker ps -a` containers.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 💻 Local Development
+
+To run this project locally on your machine:
+
+### Prerequisites
+- Node.js (v18+ recommended)
+- npm or yarn
+
+### Steps
+1. **Clone the repository:**
+   ```bash
+   git clone git@github.com:Karthims7/My-Portfolio.git
+   cd My-Portfolio
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+   *The application will be available at `http://localhost:5173/`*
+
+## 🐳 Docker Deployment
+
+This application is fully containerized with a highly optimized two-stage build, resulting in a tiny, secure Nginx footprint ready for Kubernetes, AWS ECS, or simple VPS deployment.
+
+### Prerequisites
+- Docker Engine / Docker Desktop
+
+### Build and Run
+
+1. **Build the Docker Image:**
+   ```bash
+   docker build -t portfolio-app .
+   ```
+
+2. **Run the Container:**
+   ```bash
+   docker run -d -p 8080:80 --name my-portfolio portfolio-app
+   ```
+
+3. **Verify:**
+   Open your browser and navigate to `http://localhost:8080/`.
+
+---
+*Built with React & Vanilla CSS.*
+*$ exit*
