@@ -64,23 +64,21 @@ const ExperienceCard = ({ exp }) => {
 const Experience = () => {
     const experiences = [
         {
-            role: 'DevOps / Cloud Engineer',
+            role: 'Senior DevOps / AI Infrastructure Engineer',
             company: 'RocketFrog.ai (Client)',
             period: 'Dec 2025 – Present',
             icon: <GitMerge size={24} color="var(--accent-cyan)" />,
             points: [
-                'Supported Linux-based AWS EC2 production environments including provisioning, configuration, and de-provisioning.',
-                'Performed daily system health checks, log reviews, backup validations, and patch verification.',
-                'Monitored infrastructure performance using Prometheus, Grafana, Loki, and CloudWatch dashboards.',
-                'Investigated and resolved infrastructure, networking, and deployment-related incidents.',
-                'Assisted in root cause analysis by collecting logs, metrics, and system-level diagnostics.',
-                'Managed IAM roles, cross-account AssumeRole access, and environment-level permissions.',
-                'Automated EC2 deployments and environment updates with rollback mechanisms.',
-                'Participated in vulnerability scanning and image validation workflows.',
-                'Automated repeatable operational tasks using Bash and Python.',
-                'Built monitoring dashboards for proactive observability.',
-                'Contributed to reducing manual deployment errors through structured automation.',
-                'Created operational documentation and environment standards.'
+                'Designed and managed scalable AI-grade infrastructure on AWS (EC2 – P4d/P5 GPU, VPC, ALB, Route 53, Capacity Reservation) ensuring deterministic compute availability and secure application exposure.',
+                'Architected highly available database layer using AWS RDS PostgreSQL (Multi-AZ, Subnet Groups) with controlled read/write handling and access governance.',
+                'Built end-to-end CI/CD pipelines using Azure DevOps (YAML pipelines, Artifacts, Service Connections, Self-Hosted Agents) deploying containerized workloads to AWS ECR and EC2.',
+                'Implemented cross-account authentication using AWS IAM AssumeRole integrated with Azure DevOps for secure, keyless deployments.',
+                'Optimized container builds using Docker (multi-stage builds, layer caching) reducing image size from 5GB to 600MB and pipeline time from 15 minutes to 3 minutes.',
+                'Integrated security scanning using Azure DevOps Advanced Security (CodeQL) enforcing static code analysis before artifact promotion.',
+                'Implemented centralized observability using Grafana (containerized), PostgreSQL exporters, Node.js metrics, OpenTelemetry, with Slack/Google Chat webhook alerting.',
+                'Managed secure secret storage and rotation using AWS Secrets Manager / IAM policies, enforcing least-privilege access control.',
+                'Implemented RBAC and database-level governance using pgAdmin & PostgreSQL role management, including healthcare data masking controls.',
+                'Implemented cost governance and reliability controls using AWS Budgets, Business Support Plan escalation, and capacity planning strategies for GPU workloads.'
             ]
         },
         {
