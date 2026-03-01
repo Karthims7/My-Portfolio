@@ -200,6 +200,10 @@ html {
   }
 
   /* Hero */
+  .hero-section {
+    padding-top: 10rem !important;
+  }
+
   .hero-title {
     font-size: 2.5rem !important;
   }

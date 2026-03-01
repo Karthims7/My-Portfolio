@@ -26,7 +26,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <section style={{ height: '100vh', display: 'flex', alignItems: 'center' }}>
+        <section className="hero-section" style={{ height: '100vh', display: 'flex', alignItems: 'center' }}>
             <div className="container" style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: '2rem', position: 'relative' }}>
 
                 <div style={{ position: 'absolute', top: '-10%', right: '5%', opacity: 0.1, zIndex: -1, animation: 'spin 20s linear infinite' }}>
@@ -40,14 +40,14 @@ const Hero = () => {
                     lineHeight: '1.2',
                     letterSpacing: '-1px',
                     display: 'flex',
-                    alignItems: 'center',
+                    flexDirection: 'column',
                     gap: '1rem',
-                    flexWrap: 'wrap'
                 }}>
-                    <div>Hi, I am <span style={{ color: 'var(--brand-yellow)' }}>Karthi S</span></div>
-                    <Infinity size={60} color="var(--brand-yellow)" style={{ animation: 'pulse 2s infinite' }} />
-                    <br />
-                    <span className="hero-subtitle" style={{ fontSize: '2rem', color: 'var(--text-muted)', width: '100%' }}>Sr. Cloud & DevOps Engineer</span>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+                        <div>Hi, I am <span style={{ color: 'var(--brand-yellow)' }}>Karthi S</span></div>
+                        <Infinity size={60} color="var(--brand-yellow)" style={{ animation: 'pulse 2s infinite' }} />
+                    </div>
+                    <span className="hero-subtitle" style={{ fontSize: '2rem', color: 'var(--text-muted)' }}>Sr. Cloud & DevOps Engineer</span>
                 </h1>
 
                 <div className="glass-panel" style={{
