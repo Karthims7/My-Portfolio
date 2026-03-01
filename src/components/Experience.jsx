@@ -65,8 +65,8 @@ const Experience = () => {
     const experiences = [
         {
             role: 'DevOps / Cloud Engineer',
-            company: 'RocketFrog.ai',
-            period: 'Dec 2023 – Present',
+            company: 'RocketFrog.ai (Client)',
+            period: 'Dec 2025 – Present',
             icon: <GitMerge size={24} color="var(--accent-cyan)" />,
             points: [
                 'Supported Linux-based AWS EC2 production environments including provisioning, configuration, and de-provisioning.',
@@ -84,19 +84,29 @@ const Experience = () => {
             ]
         },
         {
-            role: 'Senior Cloud Engineer',
-            company: 'SWS Technologies Pvt. Ltd',
-            period: 'Jul 2023 – Dec 2023',
-            icon: <GitCommit size={24} color="var(--accent-green)" />,
+            role: 'Cloud Engineer',
+            company: 'VLSI (Client)',
+            period: 'Aug 2023 – Present',
+            icon: <GitMerge size={24} color="var(--accent-purple)" />,
             points: [
                 'Provisioned and maintained Linux-based multi-user engineering environments.',
                 'Built PXE/Kickstart pipelines for standardized OS installations.',
-                'Managed system packaging, updates, and patch validation for RHEL/CentOS systems.',
                 'Conducted performance tuning and system diagnostics on production workloads.',
+                'Implemented monitoring stack using Grafana, Telegraf, and InfluxDB.',
+                'Ensured high availability of critical engineering tools and infrastructure.'
+            ]
+        },
+        {
+            role: 'Senior Cloud Engineer',
+            company: 'SWS International',
+            period: 'Jul 2023 – Present',
+            icon: <GitCommit size={24} color="var(--accent-green)" />,
+            points: [
+                'Served as primary Cloud & DevOps engineer for key client engagements including VLSI and RocketFrog.ai.',
+                'Managed system packaging, updates, and patch validation for RHEL/CentOS systems across environments.',
                 'Supported environment replication and disaster recovery exercises.',
                 'Performed routine checks on system services, disk utilization, and resource bottlenecks.',
                 'Assisted in identifying end-of-life components and upgrade planning.',
-                'Implemented monitoring stack using Grafana, Telegraf, and InfluxDB.',
                 'Documented environment baselines and operational procedures.'
             ]
         },
