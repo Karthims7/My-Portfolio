@@ -50,7 +50,7 @@ const Navbar = () => {
         justifyContent: 'space-between',
         alignItems: 'center'
       }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--accent-cyan)' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--accent-green)' }}>
           <Terminal size={24} />
           <span style={{ fontFamily: 'var(--font-mono)', fontWeight: 'bold', fontSize: '1.2rem', letterSpacing: '1px' }}>karthi_devops</span>
         </div>

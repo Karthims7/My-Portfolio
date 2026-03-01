@@ -39,7 +39,7 @@ const About = () => {
                         WebkitMaskImage: 'radial-gradient(circle at center, black 40%, transparent 85%)',
                     }}>
                         <img
-                            src="/image.png"
+                            src="/portfo-myimage.png"
                             alt="Karthi S"
                             style={{
                                 width: '100%',
