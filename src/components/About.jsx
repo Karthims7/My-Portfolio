@@ -9,12 +9,27 @@ const About = () => {
             <div className="about-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(250px, 1fr) 2fr', gap: '4rem', alignItems: 'flex-start' }}>
 
                 {/* Photo Section */}
-                <div style={{ position: 'relative' }}>
-                    <div className="glow-cyan" style={{
-                        width: '100%',
-                        aspectRatio: '1/1',
+                <div style={{ position: 'relative', width: '100%', aspectRatio: '1/1' }}>
+
+                    {/* Background Terminal Frame */}
+                    <div style={{
+                        position: 'absolute',
+                        top: 0, left: 0, right: 0, bottom: 0,
+                        backgroundImage: 'url(/terminal_frame.png)',
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        zIndex: 1,
+                        borderRadius: '12px',
+                        boxShadow: '0 0 20px rgba(0, 240, 255, 0.2)'
+                    }} />
+
+                    {/* Foreground Portrait Profile */}
+                    <div style={{
+                        position: 'absolute',
+                        top: '12%', left: '12%', right: '12%', bottom: '12%',
+                        zIndex: 2,
                         overflow: 'hidden',
-                        border: '2px solid var(--accent-cyan)'
+                        borderRadius: '4px'
                     }}>
                         <img
                             src="/image.png"
