@@ -179,7 +179,7 @@ html {
   }
 
   section {
-    padding: 4rem 0;
+    padding: 6rem 0;
   }
 
   .section-title {
@@ -202,8 +202,7 @@ html {
   /* Hero */
   .hero-section {
     padding-top: 10rem !important;
-    padding-bottom: 8rem !important;
-    /* Added more space at the bottom */
+    padding-bottom: 12rem !important;
   }
 
   .hero-title {

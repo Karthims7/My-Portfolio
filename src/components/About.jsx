@@ -9,36 +9,34 @@ const About = () => {
             <div className="about-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(250px, 1fr) 2fr', gap: '4rem', alignItems: 'flex-start' }}>
 
                 {/* Photo Section */}
-                <div style={{ position: 'relative', width: '100%', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '2rem' }}>
+                <div style={{ position: 'relative', width: '100%', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '3rem' }}>
 
-                    {/* Cinematic DevOps Infinity Background - NOW VISIBLE */}
+                    {/* Cinematic DevOps Infinity Background */}
                     <img
                         src="/cinematic_devops_bg.png"
                         alt=""
                         style={{
                             position: 'absolute',
-                            width: '110%',
-                            height: '110%',
+                            width: '120%',
+                            height: '120%',
                             objectFit: 'contain',
                             zIndex: 1,
-                            opacity: '0.5',
+                            opacity: '0.45',
                             filter: 'blur(1px)',
-                            pointerEvents: 'none',
-                            transform: 'scale(1.2)'
+                            pointerEvents: 'none'
                         }}
                     />
 
-                    {/* Clean Portrait - Larger and Impactful */}
+                    {/* Masked Portrait - Background 'Chopped' via Vignette Mask */}
                     <div style={{
                         position: 'relative',
-                        width: '90%',
+                        width: '95%',
                         height: 'auto',
-                        aspectRatio: '4/5',
+                        aspectRatio: '1/1',
                         zIndex: 2,
-                        borderRadius: '12px',
-                        overflow: 'hidden',
-                        boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.7)',
-                        border: '1px solid rgba(0, 245, 255, 0.2)'
+                        /* This mask fades the photo's rectangular background into the theme */
+                        maskImage: 'radial-gradient(circle at center, black 40%, transparent 85%)',
+                        WebkitMaskImage: 'radial-gradient(circle at center, black 40%, transparent 85%)',
                     }}>
                         <img
                             src="/image.png"
@@ -47,7 +45,8 @@ const About = () => {
                                 width: '100%',
                                 height: '100%',
                                 objectFit: 'cover',
-                                display: 'block'
+                                display: 'block',
+                                filter: 'brightness(1.1) contrast(1.1)'
                             }}
                         />
                     </div>
