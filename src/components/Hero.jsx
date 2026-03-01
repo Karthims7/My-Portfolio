@@ -33,7 +33,7 @@ const Hero = () => {
                     <Infinity size={400} color="var(--brand-yellow)" />
                 </div>
 
-                <h1 style={{
+                <h1 className="hero-title" style={{
                     fontSize: '4rem',
                     fontFamily: 'var(--font-sans)',
                     fontWeight: 800,
@@ -47,7 +47,7 @@ const Hero = () => {
                     <div>Hi, I am <span style={{ color: 'var(--brand-yellow)' }}>Karthi S</span></div>
                     <Infinity size={60} color="var(--brand-yellow)" style={{ animation: 'pulse 2s infinite' }} />
                     <br />
-                    <span style={{ fontSize: '2rem', color: 'var(--text-muted)', width: '100%' }}>Sr. Cloud & DevOps Engineer</span>
+                    <span className="hero-subtitle" style={{ fontSize: '2rem', color: 'var(--text-muted)', width: '100%' }}>Sr. Cloud & DevOps Engineer</span>
                 </h1>
 
                 <div className="glass-panel" style={{

@@ -43,7 +43,7 @@ const Navbar = () => {
       transition: 'all 0.3s ease',
       borderBottom: scrolled ? '1px solid rgba(0, 240, 255, 0.2)' : 'none'
     }} className={scrolled ? 'glass-panel' : ''}>
-      <div style={{
+      <div className="nav-content" style={{
         maxWidth: '1200px',
         margin: '0 auto',
         display: 'flex',
@@ -55,7 +55,7 @@ const Navbar = () => {
           <span style={{ fontFamily: 'var(--font-mono)', fontWeight: 'bold', fontSize: '1.2rem', letterSpacing: '1px' }}>karthi_devops</span>
         </div>
 
-        <div style={{ display: 'flex', gap: '2rem', alignItems: 'center', fontFamily: 'var(--font-mono)', fontSize: '0.9rem' }}>
+        <div className="nav-links" style={{ display: 'flex', gap: '2rem', alignItems: 'center', fontFamily: 'var(--font-mono)', fontSize: '0.9rem' }}>
           <a href="#about">~/about</a>
           <a href="#experience">~/experience</a>
           <a href="#skills">~/skills</a>

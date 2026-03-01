@@ -39,7 +39,7 @@ const Skills = () => {
         <section id="skills" className="container">
             <h2 className="section-title" style={{ textTransform: 'none' }}>docker ps -a --format "skills"</h2>
 
-            <div style={{
+            <div className="skills-grid" style={{
                 display: 'grid',
                 gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
                 gap: '2rem',

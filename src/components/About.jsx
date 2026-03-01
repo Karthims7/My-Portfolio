@@ -6,7 +6,7 @@ const About = () => {
         <section id="about" className="container">
             <h2 className="section-title">whoami</h2>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'minmax(250px, 1fr) 2fr', gap: '4rem', alignItems: 'flex-start' }}>
+            <div className="about-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(250px, 1fr) 2fr', gap: '4rem', alignItems: 'flex-start' }}>
 
                 {/* Photo Section */}
                 <div style={{ position: 'relative' }}>
@@ -48,7 +48,7 @@ const About = () => {
                 </div>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '1.5rem', marginTop: '4rem' }}>
+            <div className="pillars-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '1.5rem', marginTop: '4rem' }}>
                 <div className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem', alignItems: 'flex-start' }}>
                     <Shield color="var(--accent-purple)" size={32} />
                     <h3 style={{ color: 'var(--text-main)' }}>Linux/Unix Admin</h3>

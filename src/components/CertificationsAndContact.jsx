@@ -5,7 +5,7 @@ const CertificationsAndContact = () => {
     return (
         <section id="certifications" className="container" style={{ paddingBottom: '4rem' }}>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', marginTop: '2rem' }}>
+            <div className="certs-contact-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', marginTop: '2rem' }}>
 
                 {/* Certifications Map */}
                 <div>
