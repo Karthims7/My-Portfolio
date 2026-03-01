@@ -11,7 +11,7 @@ const About = () => {
                 {/* Photo Section */}
                 <div style={{ position: 'relative', width: '100%', aspectRatio: '1/1' }}>
 
-                    {/* Background DevOps Infinity Frame */}
+                    {/* Background Neon Infinity Glow */}
                     <div style={{
                         position: 'absolute',
                         top: 0, left: 0, right: 0, bottom: 0,
@@ -19,24 +19,55 @@ const About = () => {
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                         zIndex: 1,
-                        borderRadius: '12px',
-                        boxShadow: '0 0 30px rgba(0, 245, 255, 0.2)'
+                        borderRadius: '20px',
+                        opacity: '0.8',
+                        filter: 'blur(1px)'
                     }} />
 
-                    {/* Foreground Portrait Profile */}
+                    {/* Holographic Hexagon Container */}
                     <div style={{
                         position: 'absolute',
-                        top: '10%', left: '10%', right: '10%', bottom: '10%',
+                        top: '50%', left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        width: '85%',
+                        height: '85%',
                         zIndex: 2,
-                        overflow: 'hidden',
-                        borderRadius: '50%',
-                        border: '2px solid rgba(0, 245, 255, 0.3)'
+                        filter: 'drop-shadow(0 0 20px rgba(0, 245, 255, 0.4))'
                     }}>
-                        <img
-                            src="/image.png"
-                            alt="Karthi S"
-                            style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
-                        />
+                        {/* The Border / Outline */}
+                        <div style={{
+                            width: '100%', height: '100%',
+                            background: 'var(--accent-cyan)',
+                            clipPath: 'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)',
+                            position: 'relative',
+                            padding: '2px' // Border width
+                        }}>
+                            {/* Inner Image Container */}
+                            <div style={{
+                                width: '100%', height: '100%',
+                                background: 'black',
+                                clipPath: 'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)',
+                                overflow: 'hidden',
+                                position: 'relative'
+                            }}>
+                                <img
+                                    src="/image.png"
+                                    alt="Karthi S"
+                                    style={{
+                                        width: '100%', height: '100%', objectFit: 'cover',
+                                        display: 'block',
+                                        filter: 'brightness(1.1) contrast(1.1) saturate(1.1)'
+                                    }}
+                                />
+                                {/* Scanline / Digital Overlay */}
+                                <div style={{
+                                    position: 'absolute',
+                                    top: 0, left: 0, right: 0, bottom: 0,
+                                    background: 'repeating-linear-gradient(rgba(0,245,255,0.03) 0px, transparent 1px, transparent 2px)',
+                                    pointerEvents: 'none'
+                                }} />
+                            </div>
+                        </div>
                     </div>
                 </div>
 
