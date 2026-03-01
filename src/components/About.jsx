@@ -11,32 +11,31 @@ const About = () => {
                 {/* Photo Section */}
                 <div style={{ position: 'relative', width: '100%', aspectRatio: '1/1', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
 
-                    {/* Floating DevOps Infinity Background */}
+                    {/* Cinematic DevOps Infinity Background */}
                     <img
-                        src="/devops_portrait_bg.png"
+                        src="/cinematic_devops_bg.png"
                         alt=""
                         style={{
                             position: 'absolute',
-                            width: '90%',
-                            height: '90%',
+                            width: '95%',
+                            height: '95%',
                             objectFit: 'contain',
                             zIndex: 1,
-                            opacity: '0.6',
-                            filter: 'blur(2px) drop-shadow(0 0 15px var(--accent-cyan))',
-                            animation: 'float 6s ease-in-out infinite'
+                            opacity: '0.25',
+                            filter: 'blur(3px)',
+                            pointerEvents: 'none'
                         }}
                     />
 
-                    {/* Main Portrait Image */}
+                    {/* Clean Portrait - No Frame */}
                     <div style={{
                         position: 'relative',
                         width: '75%',
-                        height: '85%',
+                        height: '75%',
                         zIndex: 2,
-                        borderRadius: '24px',
+                        borderRadius: '16px',
                         overflow: 'hidden',
-                        boxShadow: '0 20px 40px rgba(0,0,0,0.4)',
-                        border: '1px solid rgba(255,255,255,0.05)'
+                        boxShadow: '0 10px 30px rgba(0,0,0,0.5)'
                     }}>
                         <img
                             src="/image.png"
@@ -48,21 +47,7 @@ const About = () => {
                                 display: 'block'
                             }}
                         />
-                        {/* Subtle Gradient Overlay for integration */}
-                        <div style={{
-                            position: 'absolute',
-                            bottom: 0, left: 0, right: 0, height: '30%',
-                            background: 'linear-gradient(transparent, rgba(10,10,10,0.8))',
-                            pointerEvents: 'none'
-                        }} />
                     </div>
-
-                    <style>{`
-                        @keyframes float {
-                            0%, 100% { transform: translateY(0) scale(1); }
-                            50% { transform: translateY(-15px) scale(1.05); }
-                        }
-                    `}</style>
                 </div>
 
                 <div>

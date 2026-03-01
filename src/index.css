@@ -202,6 +202,8 @@ html {
   /* Hero */
   .hero-section {
     padding-top: 10rem !important;
+    padding-bottom: 8rem !important;
+    /* Added more space at the bottom */
   }
 
   .hero-title {
