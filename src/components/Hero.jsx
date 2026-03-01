@@ -44,8 +44,8 @@ const Hero = () => {
                     gap: '1rem',
                 }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
-                        <div>Hi, I am <span style={{ color: 'var(--brand-yellow)' }}>Karthi S</span></div>
-                        <Infinity size={60} color="var(--brand-yellow)" style={{ animation: 'pulse 2s infinite' }} />
+                        <div>Hi, I am <span style={{ color: 'var(--brand-text)' }}>Karthi S</span></div>
+                        <Infinity size={60} color="var(--brand-text)" style={{ animation: 'pulse 2s infinite' }} />
                     </div>
                     <span className="hero-subtitle" style={{ fontSize: '2rem', color: 'var(--text-muted)' }}>Sr. Cloud & DevOps Engineer</span>
                 </h1>
