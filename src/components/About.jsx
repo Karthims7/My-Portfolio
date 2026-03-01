@@ -27,8 +27,8 @@ const About = () => {
 
                 <div>
                     <h3 style={{ fontSize: '1.8rem', color: 'var(--text-main)', marginBottom: '1rem', fontFamily: 'var(--font-mono)' }}>Sr. Cloud & DevOps Engineer</h3>
-                    <p style={{ fontSize: '1.1rem', color: 'var(--text-main)', marginBottom: '1rem', lineHeight: '1.8' }}>
-                        Infrastructure Support Engineer with 3+ years of experience supporting Linux-based production environments across AWS and Azure. Strong background in environment provisioning, patching, monitoring, troubleshooting, and automation of operational workflows.
+                    <p style={{ fontSize: '1.15rem', color: 'var(--text-main)', marginBottom: '1rem', lineHeight: '1.8', fontFamily: 'var(--font-sans)', fontWeight: '500', letterSpacing: '0.2px' }}>
+                        Building 3+ years of experience handling Linux-based production environments across AWS and Azure as well as OnPrem. Strong background in environment provisioning, patching, monitoring, troubleshooting, and automation of Devops Operational workflows.
                     </p>
                     <p style={{ color: 'var(--text-muted)', marginBottom: '1rem', lineHeight: '1.8' }}>
                         Hands-on experience in Linux administration (RHEL/CentOS/Ubuntu), system performance monitoring, log analysis, cloud infrastructure support, and ITSM-driven incident handling. Skilled in Bash and Python scripting to automate repeatable operational tasks and improve system reliability.
