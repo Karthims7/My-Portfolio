@@ -9,7 +9,7 @@ const CertificationsAndContact = () => {
 
                 {/* Certifications Map */}
                 <div>
-                    <h2 className="section-title" style={{ fontSize: '2rem', marginBottom: '2rem' }}>./certs</h2>
+                    <h2 className="section-title" style={{ fontSize: '2rem', marginBottom: '2rem', textTransform: 'none' }}>./certs</h2>
 
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                         <a href="https://www.credly.com/badges/bb33a795-4570-4b4f-8abd-60d869c04526/linked_in_profile" target="_blank" rel="noopener noreferrer" style={{ display: 'block', textDecoration: 'none' }}>
@@ -54,7 +54,7 @@ const CertificationsAndContact = () => {
 
                 {/* Contact Module */}
                 <div id="contact">
-                    <h2 className="section-title" style={{ fontSize: '2rem', marginBottom: '2rem' }}>ping -c 4 contact</h2>
+                    <h2 className="section-title" style={{ fontSize: '2rem', marginBottom: '2rem', textTransform: 'none' }}>ping -c 4 contact</h2>
 
                     <div className="glass-panel glow-cyan" style={{ padding: '3rem 2rem', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
                         <p style={{ color: 'var(--text-main)', fontSize: '1.1rem', lineHeight: '1.8' }}>

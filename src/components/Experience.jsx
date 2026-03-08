@@ -136,7 +136,7 @@ const Experience = () => {
 
     return (
         <section id="experience" className="container">
-            <h2 className="section-title">pipeline --history</h2>
+            <h2 className="section-title" style={{ textTransform: 'none' }}>pipeline --history</h2>
 
             <div style={{ position: 'relative', marginTop: '4rem' }}>
                 <div style={{
